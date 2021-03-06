@@ -97,7 +97,7 @@ class SignUpView(CreateView):
 			try:
 				"""Send account verification link"""
 				current_site = get_current_site(request)
-				subject = 'Hi {} from TicTacBomb, please verify your account'.format(user.email)
+				subject = 'Hi {}, please verify your account'.format(user.email)
 				from_email = 'TicTacBomb <noreply@tictacbomb.com>'
 				text_content = 'TicTacBomb <noreply@tictacbomb.com>'
 				message = render_to_string('account_activation_email.html', {
