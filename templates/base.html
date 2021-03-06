@@ -38,19 +38,32 @@
                             </ul>
                     </div>
                     <div class="logo-element">
-                        504
+                        TTT
                     </div>
                 </li>
                 
 
                 <li>
-                    <a href="{% url 'users:index' %}"><i class="fa fa-home"></i> <span class="nav-label">Home</span> </a>
+                    <a href=""><i class="fa fa-play"></i> <span class="nav-label">Game room</span> </a>
+                </li>
+                <li>
+                    <a href="{% url 'users:index' %}"><i class="fa fa-user"></i> <span class="nav-label">Profile</span> </a>
+                </li>
+                <li>
+                    <a href="{% url 'users:index' %}"><i class="fa fa-home"></i> <span class="nav-label">My Score</span> </a>
                 </li>
                 
-              
-                {% comment %} <li>
-                    <a href="{% url 'configuration' %}"><i class="fa fa-cog"></i> <span class="nav-label">Configuración</span> </a>
-                </li> {% endcomment %}
+                <li>
+                    <a href="{% url 'users:index' %}">
+                        
+                        <span class="nav-label">Name: Cris Arias</span><br>
+                        <span class="nav-label">Mail: ariasover@gmail.com</span><br>
+                        <span class="nav-label">Phone: +50496068888</span>
+                    
+                    </a>
+                </li>
+                
+            
             </ul>
 
         </div>
